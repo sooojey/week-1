@@ -66,9 +66,58 @@
               <th>2022</th>
             </tr>
           </thead>
-          <tbody>  </tbody>
-          <tfoot>  </tfoot>
+          <tbody>
+           <tr>
+            <td>자동차</td>
+            <td>100</td>
+            <td>120</td>
+            <td>130</td>
+           </tr> 
+           <tr>
+            <td>모니터</td>
+             <td>742</td>
+             <td rowspan="2">1082</td>
+             <td>769</td>
+           </tr>
+           <tr>
+            <td>에어컨</td>
+            <td>300</td>
+            <td>752</td>
+           </tr> 
+          </tbody>
+          <!-- tfoot:평균,합산 등 -->
+          <tfoot>
+            <tr>
+              <td colspan="3">합계</td>
+              <td>4000</td>
+            </tr>
+          </tfoot>
         </table>
+      </section>
+      <!--form interaction-->
+      <section>
+       <form action="/signup" method="post">
+        <p>user name</p>
+        <input list="names" name="username" type="text" maxlength="10" size="10">
+         <datalist id="names">
+           <option value="찢어진 바지"></option>
+           <option value="냉철한 옷장"></option>
+           <option value="따뜻한 참치"></option>
+         </datalist>
+         
+        <label for=u-email>Email</label>
+        <input id="u-email" name="email" type="email">
+          
+        <label for=u-pw>Password</label>
+        <input id="u-pw" name="password" type="password">
+         
+        <label for="u-birth">Birthday</label>
+        <input id="u-birth" name="birthday" type="date">
+
+        <input type="submit">
+        <button type="reset">초기화</button>
+         
+      </form>
       </section>
     </main>
     <aside>
